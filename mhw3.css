@@ -1,0 +1,496 @@
+/*@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/css/weather-icons.min.css); /* questa istruziione mi permette di importare un file di stile in un altro, si può fare attraverso una stringa o URL */
+
+body {
+	margin: 0px;
+	background-color: rgb(227,228,232);
+}
+nav {
+	height: 50px;
+	background-image: linear-gradient(rgb(105, 105, 105), rgb(83, 83, 83));
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#bandarossa {
+	height: 5px;
+	background-color: red;
+}
+#bandagrigia {
+	height: 4px;
+	width: 958px;
+	background-color: rgb(87, 87, 87);
+}
+#mainblock {
+	height: 1070px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+header {
+	height: 135px;
+	width: 958px;
+	background-color: peachpuff;
+}
+#immagine1 {
+	width: 35%;
+	height: 100%;
+	background-color: lightgreen;
+	display: inline-block;
+}
+#immagine2 {
+	width: 64%;
+	height: 100%;
+	background-color: lightcoral;
+	display: inline-block;
+}
+footer {
+	background-image: url(footer-image.png);
+	background-repeat: no-repeat;
+	height: 62px;
+}
+#main-section {
+	height: 870px;
+	width: 954px;
+	border: 2px, solid gold;
+	background-color: white;
+}
+.leftbar {
+	margin: 20px;
+	margin-left: 15px;
+	margin-right: 33px;
+	height: 840px;
+	width: 200px;
+	display: inline-block;
+}
+#courses {
+	margin: 20px;
+	height: 820px;
+	width: 675px;
+	position: absolute;
+	
+}
+
+.classeCorsi{
+	display: inline-block;
+}
+.intestazione {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #1084a7;
+	border-bottom: 1px solid rgb(184, 184, 182);
+}
+.intestazione .corsi {
+	color: red;
+}
+#flex-menu {
+	display: flex;
+	margin: 9px;
+	margin-right: 0px;
+	margin-top: 5px;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.InputSelect {
+	height: 18px;
+	border-width: 1px;
+	border-color: rgb(184, 184, 182);
+	border-radius: 5px;
+	flex-grow: 1;
+	margin-bottom: 5px;
+}
+.InputSelect:hover {
+	border-color: #1084a7;
+	background-color: rgb(246,246,246);
+}
+input:hover {
+	border-color: #1084a7;
+}
+.spazio {
+	margin-left: 7px;
+}
+img .spazio {
+	height: 17px;
+	width: 18px;
+}
+p {
+	margin: 4px;
+	font-size: 12px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#bottone {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#bottone-child {
+	height: 17px;
+	width: auto;
+	border: 1px solid grey;
+	border-radius: 10px;
+	margin-top: 5px;
+	padding: 6px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	color: grey;
+	background-color: rgb(232, 232, 232);
+	font-size: 12px;
+}
+#bottone-child:hover {
+	background-color: grey;
+	color: white;
+	border-color: #1084a7;
+}
+.link {
+	padding-left: 27px;
+	margin: 5px;
+	padding-bottom: 1px;
+	height: 14.4px;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: black;
+	background-image: url(arrow1.png);
+	background-repeat: no-repeat;
+}
+.doppio.link {
+	height: 28px;
+}
+a.primo {
+	text-decoration: none;
+}
+a.primo:active, a:visited, a:link {
+	color: black;
+}
+a.primo:hover {
+	color: darkred;
+}
+#prova:hover {
+	background-color: rgb(243, 243, 243);
+	border: 0px solid black;
+}
+#messaggio {
+	padding: 10px;
+	margin-top: 3px;
+	border: 1.5px solid rgb(184, 184, 182);
+	height: fit-content;
+	border-radius: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-left: 0px;
+	margin-top: 7px;
+	margin-bottom: 25px;
+	font-size: 12px;
+	background-image: linear-gradient(rgb(235, 235, 235), rgb(255, 255, 255)) 
+}
+strong {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 14px;
+}
+.immagini_store {
+	margin-top: 18px;
+	width: 115px;
+	height: 34px;
+	display: block;
+	border-radius: 4.5px;
+}
+.immagini_store-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border: 0px solid black;
+}
+.immagini_store .seconda {
+	margin-top: 11px;
+}
+#dipartimenti {
+	width: 200px;
+}
+#navdiv {
+	height: 50px;
+	width: 955px;
+	display: flex;
+	justify-content: space-between;
+	
+
+}
+
+#meteo{
+	width: 70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#meteo:hover{
+	background-color: #424242;
+	border-left: 1px solid red;
+	border-right: 1px solid red;
+}
+
+#meteo-div{
+	margin-left: 20px;
+	height: auto;
+}
+
+#MessaggioMeteo{
+	border: 1px solid #1084a7;
+	padding: 3px;
+	border-radius: 10%;
+	position: absolute;
+	right: 30px;
+	top: 10px;
+	height: auto;
+	width: auto;
+	font-size: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+#home_button {
+	background-color: white;
+	height: 50px;
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 13px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+}
+#home_button:hover {
+	text-decoration: none;
+}
+.footer-class {
+	height: 57px;
+	width: 955px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 13px;
+}
+#left_footer {
+	margin-left: 70px;
+	height: 55px;
+	width: 350px;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 13px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+#right_footer {
+	margin-left: 55px;
+	margin-right: 50px;
+	height: 55px;
+	width: 370px;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 13px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+a.second {
+	color: white;
+	text-decoration: none;
+}
+a.second:hover {
+	color: #1084a7;
+}
+a.third_link {
+	color: black;
+	text-decoration: none;
+}
+a.third_link:hover {
+	color: #1084a7;
+}
+li {
+	list-style-image: url(arrow.png);
+	font-size: 11px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	height: 25px;
+	color: #424242;
+	text-decoration: none;
+}
+li:hover {
+	background-color: rgb(243, 243, 243);
+	color: rgb(49, 126, 150) 
+}
+
+#DivForm{
+	position: absolute;
+	top: 193.938px;
+	left: 460px;
+	right: -160px;
+	bottom: -269.938;
+	margin: 20px;
+    height: 820px;
+    width: 675px;
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+
+#DivForm input{
+	margin: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#DivForm p{
+	margin: 10px;
+	margin-bottom: 3px;
+}
+
+#DivForm #bottone {
+	margin-top: 20px;
+}
+
+
+.oscura {
+	display: none;
+}
+
+/* PER JAVASCRIPT*/
+
+.margine{
+	margin: 5px;
+
+}
+
+.pixel{
+	width: 16px;
+	height: 16px;
+}
+
+#DivMessaggio{
+	position:absolute;
+	left: 135px;
+	top: 130px;
+	border: 1px solid grey;
+	border-radius: 3%;
+	height: 25%;
+	width: 60%;
+	background-color: rgb(227,228,232);
+	z-index: 1;
+	box-shadow: 2px 2px black; /* il primo valore indica l'ombra verticale,  il secondo quello orizzontale*/
+
+}
+
+#quote{
+	position:absolute;
+	left: 36%;
+	top: 32%;
+	border-radius: 3%;
+	z-index: 1;
+}
+
+#DivForm{
+	position:absolute;
+	left: 100px;
+	top: 100px;
+	border: 1px solid grey;
+	border-radius: 3%;
+	height: 60%;
+	width: 60%;
+	background-color: rgb(227,228,232);
+	z-index: 1;
+	box-shadow: 2px 2px black; /* il primo valore indica l'ombra verticale,  il secondo quello orizzontale*/
+	padding-top: 4px;
+	padding-left: 4px;
+}
+
+.DivMessaggioPerButton-TOP{
+	width: 100%;
+	height: 70%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.DivMessaggioPerButton-TOP p {
+	font-size: 14px;	
+	margin-top: 13px;
+}
+
+
+.DivMessaggioPerButton-BOTTOM{
+	width: 100%;
+	height: 30%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-end;
+
+}
+
+/*risolvi caso di ridondanza*/
+.bottone-child-messaggio {
+	height: 17px;
+	width: 40px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	margin: 10px;
+	margin-bottom: 15px;
+	padding: 6px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	color: grey;
+	background-color: rgb(232, 232, 232);
+	font-size: 12px;
+	box-shadow: 1px 1px black;
+}
+
+.bottone-child-messaggio:hover {
+	background-color: grey;
+	color: white;
+	border-color: #1084a7;
+}
+
+.mostraBlock{
+	display: block;
+}
+
+#download1,#download2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.MeteoInfo{
+	display: inline;
+	font-family: 'Roboto Condensed', sans-serif;
+
+	font-size: 16px;
+	text-align: center;
+}
+
+.h2meteo {
+	display: inline;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+
+}
+
+.displayInBlock{
+	display: inline-block;
+}
+
+.tasti{
+	width: 150px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
